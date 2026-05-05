@@ -19,7 +19,7 @@ under Grant No. **DRL-2300433**.
 ## Partners
 
 - **TERC** — _[short description placeholder]_
-- **Tufts University / CEEO** — _[short description placeholder]_
+- **Tufts University Center for Engineering Education and Outreach** — _[short description placeholder]_
 
 ## Contact
 

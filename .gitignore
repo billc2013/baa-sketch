@@ -35,4 +35,5 @@ pnpm-debug.log*
 .claude*
 ./.claude
 ./claude*
+.CLAUDE.md
 
