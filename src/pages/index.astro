@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Content as Intro } from '../content/home/intro.md';
+import { Content as WhyBiomimicry } from '../content/home/why-biomimicry.md';
 
 const cards = [
   {
@@ -20,25 +22,12 @@ const cards = [
 ];
 ---
 <BaseLayout title="Home">
-  <section class="hero">
-    <h1>Biomimicry as an Authentic Anchor</h1>
-    <p class="lede">
-      Supporting middle-school science teachers as they integrate biomimicry, engineering
-      design, and computational thinking into their classrooms.
-    </p>
+  <section class="hero markdown">
+    <Intro />
   </section>
 
-  <section class="why">
-    <h2>Why Biomimicry?</h2>
-    <p>
-      Nature has been solving design problems for billions of years. Biomimicry uses
-      biological strategies as anchor phenomena for authentic engineering design — giving
-      students a meaningful "why" alongside the "how."
-    </p>
-    <p class="placeholder-note">
-      [Placeholder — replace with the Vox/Wired video embeds, AskNature.org strategies,
-      and a diagram drawn from the Science Scope article.]
-    </p>
+  <section class="why markdown">
+    <WhyBiomimicry />
   </section>
 
   <section class="card-grid">

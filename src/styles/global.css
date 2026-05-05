@@ -169,6 +169,7 @@ th {
   margin-bottom: 2rem;
 }
 .hero h1 { margin-bottom: 0.25em; }
+.hero p,
 .lede {
   font-size: 1.15rem;
   color: var(--color-muted);

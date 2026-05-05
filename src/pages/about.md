@@ -14,7 +14,7 @@ their classrooms.
 ## Funding
 
 This material is based upon work supported by the National Science Foundation
-under Grant No. **DRL-1932854**.
+under Grant No. **DRL-2300433**.
 
 ## Partners
 

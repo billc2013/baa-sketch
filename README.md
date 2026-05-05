@@ -1,7 +1,7 @@
 # BAA Website Sketch
 
 A scratch-pad website for the **Biomimicry as an Authentic Anchor** project
-(TERC + Tufts, NSF DRL-1932854). Built as a small Astro static site so the
+(TERC + Tufts, NSF DRL-2300433). Built as a small Astro static site so the
 content is just Markdown files in folders.
 
 ## For colleagues editing content
@@ -39,7 +39,7 @@ src/
 │   ├── Header.astro                # top nav
 │   └── Footer.astro                # NSF disclaimer + logos
 ├── pages/                          # every .md file here becomes a page
-│   ├── index.astro                 # home
+│   ├── index.astro                 # home (layout only — prose lives in src/content/home/)
 │   ├── about.md
 │   ├── classroom-resources/
 │   │   ├── index.md
@@ -49,6 +49,10 @@ src/
 │   │   └── index.md
 │   └── research-and-team/
 │       └── index.md
+├── content/                        # editable text fragments imported by .astro pages
+│   └── home/
+│       ├── intro.md                # home page hero text
+│       └── why-biomimicry.md       # home page "Why Biomimicry?" section
 └── styles/global.css               # site-wide styling
 public/                             # drop images / PDFs here; reference as /filename.png
 ```
