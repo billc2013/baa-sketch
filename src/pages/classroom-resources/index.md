@@ -16,6 +16,7 @@ combine **ingredients** into your own design challenge.
 
 ## Classroom Approach
 
-_[Placeholder — short description of the BAA classroom approach: anchoring a unit
-in a biological strategy, scaffolding student engineering design, and connecting
-to computational thinking practices.]_
+_[Placeholder — short description of the BAA classroom approach: identifying a design challenge,
+anchoring a unit in a biological strategy, engaging in structure/function analysis,
+scaffolding student engineering design, check back in on relevant biological strategies and S/F 
+analysis, iterate, and share.]_
