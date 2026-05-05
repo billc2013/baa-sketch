@@ -27,5 +27,12 @@ pnpm-debug.log*
 !.vscode/settings.json
 .idea/
 
-# excel lock files
+# excel files
 ~$*.xlsx
+*.xlsx
+
+# claude code files
+.claude*
+./.claude
+./claude*
+
