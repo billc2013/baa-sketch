@@ -1,0 +1,28 @@
+---
+const { pathname } = Astro.url;
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/classroom-resources/', label: 'Classroom Resources' },
+  { href: '/professional-development/', label: 'Professional Development' },
+  { href: '/research-and-team/', label: 'Research & Team' },
+  { href: '/about/', label: 'About' },
+];
+const isActive = (href) => href === '/' ? pathname === '/' : pathname.startsWith(href);
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <span class="brand-name">Biomimicry as an Authentic Anchor</span>
+      <span class="brand-sub">A TERC &amp; Tufts NSF Project</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        {nav.map(item => (
+          <li>
+            <a href={item.href} class={isActive(item.href) ? 'active' : ''}>{item.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

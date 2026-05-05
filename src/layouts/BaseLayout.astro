@@ -1,0 +1,26 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+const { title, description } = Astro.props;
+const siteTitle = 'Biomimicry as an Authentic Anchor';
+const fullTitle = title ? `${title} — ${siteTitle}` : siteTitle;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description ?? 'BAA — a TERC & Tufts NSF-funded project on biomimicry-anchored middle-school engineering and science.'} />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main" class="container site-main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

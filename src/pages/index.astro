@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const cards = [
+  {
+    href: '/classroom-resources/',
+    title: 'Classroom Resources',
+    blurb: 'Pre-built lessons and the ingredients to build your own biomimicry design challenges.',
+  },
+  {
+    href: '/professional-development/',
+    title: 'Professional Development',
+    blurb: 'Workshop slides, hour-long PD, design-challenge facilitation, and S/F analysis support.',
+  },
+  {
+    href: '/research-and-team/',
+    title: 'Research & Team',
+    blurb: 'Publications, the Pedagogical Design Capacity model, and the people behind the project.',
+  },
+];
+---
+<BaseLayout title="Home">
+  <section class="hero">
+    <h1>Biomimicry as an Authentic Anchor</h1>
+    <p class="lede">
+      Supporting middle-school science teachers as they integrate biomimicry, engineering
+      design, and computational thinking into their classrooms.
+    </p>
+  </section>
+
+  <section class="why">
+    <h2>Why Biomimicry?</h2>
+    <p>
+      Nature has been solving design problems for billions of years. Biomimicry uses
+      biological strategies as anchor phenomena for authentic engineering design — giving
+      students a meaningful "why" alongside the "how."
+    </p>
+    <p class="placeholder-note">
+      [Placeholder — replace with the Vox/Wired video embeds, AskNature.org strategies,
+      and a diagram drawn from the Science Scope article.]
+    </p>
+  </section>
+
+  <section class="card-grid">
+    {cards.map(c => (
+      <a class="card" href={c.href}>
+        <h3>{c.title}</h3>
+        <p>{c.blurb}</p>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
