@@ -38,8 +38,8 @@ src/
 ├── components/
 │   ├── Header.astro                # top nav
 │   └── Footer.astro                # NSF disclaimer + logos
-├── pages/                          # every .md file here becomes a page
-│   ├── index.astro                 # home (layout only — prose lives in src/content/home/)
+├── pages/                          # every .md / .astro here becomes a page
+│   ├── index.astro                 # home (layout only — prose lives in pages/home/)
 │   ├── about.md
 │   ├── classroom-resources/
 │   │   ├── index.md
@@ -47,17 +47,60 @@ src/
 │   │   └── ingredients.md
 │   ├── professional-development/
 │   │   └── index.md
-│   └── research-and-team/
-│       └── index.md
-├── content/                        # editable text fragments imported by .astro pages
-│   └── home/
+│   ├── research-and-team/
+│   │   └── index.md
+│   └── home/                       # text fragments imported by index.astro
 │       ├── intro.md                # home page hero text
 │       └── why-biomimicry.md       # home page "Why Biomimicry?" section
 └── styles/global.css               # site-wide styling
-public/                             # drop images / PDFs here; reference as /filename.png
+public/                             # uploaded files (PDFs, images, slides) — see below
+├── lessons/                        # full lesson PDFs / PPTX
+├── worksheets/                     # student worksheets
+├── slides/                         # PD decks
+└── images/                         # photos, diagrams
 ```
 
-To add a brand-new page, create `src/pages/<some-name>.md` with this header:
+### Uploading files (PDFs, images, slides) and linking to them
+
+Anything you put in the `public/` folder is hosted at the root of the site.
+For example, `public/lessons/biorobots-1-hour-activity.pdf` is reachable at
+`/lessons/biorobots-1-hour-activity.pdf`.
+
+**To upload a file via GitHub (no CLI needed):**
+
+1. In the GitHub repo, click into the `public/` folder, then into the
+   appropriate subfolder (`lessons/`, `worksheets/`, `slides/`, `images/`).
+   If the subfolder doesn't exist yet, you can create it on the fly when
+   you upload — see step 3.
+2. Click **Add file → Upload files**.
+3. Drag your file in. (To create a new subfolder at the same time, type
+   `subfolder-name/` into the filename area before dropping the file.)
+4. Scroll down, write a short commit message ("Add Biorobots 1-hour PDF"),
+   and commit.
+
+**To link to it from a `.md` page:**
+
+```markdown
+[Biorobots 1-hour activity (PDF)](/lessons/biorobots-1-hour-activity.pdf)
+```
+
+**To embed an image:**
+
+```markdown
+![Diagram of the design cycle](/images/design-cycle.png)
+```
+
+**Filename rules of thumb** — saves headaches later:
+
+- Lowercase only.
+- Use hyphens, not spaces (`design-cycle.png`, not `Design Cycle.png`).
+- Drop parentheses and version markers like `(1)` — those become ugly URL
+  encoding (`%20`, `%28`).
+- Use a clear, descriptive name; the URL is the file's permanent address.
+
+### Adding a brand-new page
+
+Create `src/pages/<some-name>.md` with this header:
 
 ```markdown
 ---
@@ -70,6 +113,9 @@ description: One-line summary for search engines.
 
 Your content here…
 ```
+
+If the page should appear in the top navigation, ask Bill to add it to
+`src/components/Header.astro` — that's a code-side edit.
 
 ## For Bill (the maintainer)
 
