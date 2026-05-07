@@ -29,7 +29,7 @@ From BioRobots and the BAA team:
 ## Plants & Animals — Organism Resources
 
 - Padlets — _[link]_
-- [![All Padlets](/public/images/Building_Guides_Thumbnail.png)](/ingredients/All_Padlets_etc.pdf) -- PDF representing a PPT (or other?)showing a range of Building Guide Resources.
+- [![All Padlets](/images/Building_Guides_Thumbnail.png)](/public/ingredients/All_Padlets_etc.pdf) -- Placeholder
 
 ## Design Challenge Project Supplies
 
@@ -48,3 +48,6 @@ Categories:
 - **Facilitation**
 - **Organization**
 - **Tech tips**
+
+
+[def]: /ingredients/All_Padlets_etc.pdf
