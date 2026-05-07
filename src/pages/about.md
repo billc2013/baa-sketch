@@ -22,6 +22,7 @@ their classrooms.
 Debra Bernstein
 Michael Cassidy
 Kathryn Hobbs
+Sarah Hill
 
 ### TUFTS CEEO
 Kristen Wendell
