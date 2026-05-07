@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BaseLayout.astro
 title: Classroom Resources
-description: Pre-built lessons and ingredients to build your own biomimicry design challenges.
+description: Pre-built lessons and ingredients to build your own biomimicry design challenges. MC edit
 ---
 
 # Classroom Resources
