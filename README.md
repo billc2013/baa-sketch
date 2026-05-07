@@ -90,6 +90,30 @@ For example, `public/lessons/biorobots-1-hour-activity.pdf` is reachable at
 ![Diagram of the design cycle](/images/design-cycle.png)
 ```
 
+**To make a clickable thumbnail (image that links to a PDF or other doc):**
+
+Wrap the image in a link — same brackets-then-parentheses pattern as a
+regular Markdown link, just with the image syntax inside:
+
+```markdown
+[![Cover of the Biorobots 1-hour activity](/images/biorobots-1hr-thumb.jpg)](/lessons/biorobots-1-hour-activity.pdf)
+```
+
+Markdown doesn't let you set image dimensions, so **resize the JPEG/PNG to
+its display size before uploading** (e.g. 200×260 px for a thumbnail).
+If you need precise sizing, you can use a small bit of HTML inside the `.md`
+file:
+
+```markdown
+<a href="/lessons/biorobots-1-hour-activity.pdf">
+  <img src="/images/biorobots-1hr-thumb.jpg" alt="Cover of the Biorobots 1-hour activity" width="160">
+</a>
+```
+
+> **Path gotcha:** even though the file lives in `public/images/...`, the
+> URL is `/images/...` — drop the `public/` part. Astro serves everything
+> in `public/` from the site root.
+
 **Filename rules of thumb** — saves headaches later:
 
 - Lowercase only.
