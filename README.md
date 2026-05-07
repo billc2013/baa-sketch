@@ -2,7 +2,7 @@
 
 A scratch-pad website for the **Biomimicry as an Authentic Anchor** project
 (TERC + Tufts, NSF DRL-2300433). Built as a small Astro static site so the
-content is just Markdown files in folders.
+content is just Markdown files in folders. MC is editing. 
 
 ## For colleagues editing content
 
