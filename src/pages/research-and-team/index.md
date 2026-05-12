@@ -11,10 +11,6 @@ description: Publications, the Pedagogical Design Capacity model, and the people
 - **Science Scope article** — _[citation + link placeholder]_
 - _[Add additional publications as they appear.]_
 
-## Frameworks
-
-- **Pedagogical Design Capacity (PDC) model** — _[short description + reference]_
-
 ## Team
 
 _[Placeholder profile list — one short bio per team member, similar to the
