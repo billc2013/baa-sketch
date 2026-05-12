@@ -4,5 +4,5 @@ title: Home intro
 
 # Biomimicry as an Authentic Anchor
 
-Supporting middle-school science teachers as they integrate biomimicry,
-engineering design, and computational thinking into their classrooms.
+Supporting middle-school science and STEM teachers as they integrate biomimicry,
+engineering design, and technology into their classrooms.
